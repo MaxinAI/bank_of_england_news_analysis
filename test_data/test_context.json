@@ -1,0 +1,218 @@
+{
+  "Bank_Rate": {
+    "case_1": [
+      {
+        "label": "head",
+        "validator": {
+          "lemma": [
+            "agree",
+            "vote"
+          ],
+          "pos": [
+            "verb"
+          ],
+          "good_subtree_tokens": [
+            "bank",
+            "rate",
+            "%"
+          ]
+        },
+        "parent": "",
+        "children": [
+          "subject",
+          "action"
+        ]
+      },
+      {
+        "label": "subject",
+        "validator": {
+          "text": [
+            "mpc",
+            "committee"
+          ]
+        },
+        "parent": "head",
+        "children": []
+      },
+      {
+        "label": "action",
+        "validator": {
+          "lemma": [
+            "increase",
+            "maintain",
+            "raise",
+            "reduce"
+          ],
+          "pos": [
+            "verb"
+          ],
+          "good_subtree_tokens": [
+            "bank",
+            "rate",
+            "%"
+          ]
+        },
+        "parent": "head",
+        "children": [
+          "rate",
+          "preposition"
+        ]
+      },
+      {
+        "label": "rate",
+        "validator": {
+          "text": [
+            "rate"
+          ],
+          "bad_subtree_tokens": [
+            "repo"
+          ]
+        },
+        "parent": "action",
+        "children": []
+      },
+      {
+        "label": "preposition",
+        "validator": {
+          "text": [
+            "at",
+            "to"
+          ]
+        },
+        "parent": "action",
+        "children": [
+          "%"
+        ]
+      },
+      {
+        "label": "%",
+        "validator": {
+          "text": [
+            "%"
+          ]
+        },
+        "parent": "preposition",
+        "children": [
+          "number"
+        ]
+      },
+      {
+        "label": "number",
+        "validator": {
+          "pos": [
+            "num"
+          ]
+        },
+        "parent": "%",
+        "children": [],
+        "extract": true
+      }
+    ]
+  },
+  "QE": {
+    "case_3": [
+      {
+        "label": "head",
+        "validator": {
+          "lemma": [
+            "expansion"
+          ],
+          "good_subtree_tokens": [
+            "billion",
+            "stock"
+          ]
+        },
+        "parent": "",
+        "children": [
+          "scheme",
+          "action"
+        ]
+      },
+      {
+        "label": "scheme",
+        "validator": {
+          "lemma": [
+            "scheme"
+          ]
+        },
+        "parent": "head",
+        "children": []
+      },
+      {
+        "label": "action",
+        "validator": {
+          "lemma": [
+            "take"
+          ],
+          "pos": [
+            "verb"
+          ]
+        },
+        "parent": "head",
+        "children": [
+          "object",
+          "preposition"
+        ]
+      },
+      {
+        "label": "object",
+        "validator": {
+          "lemma": [
+            "stock"
+          ],
+          "bad_subtree_tokens": [
+            "non",
+            "-",
+            "financial"
+          ]
+        },
+        "parent": "action",
+        "children": []
+      },
+      {
+        "label": "preposition",
+        "validator": {
+          "text": [
+            "to"
+          ],
+          "pos": [
+            "adp"
+          ]
+        },
+        "parent": "action",
+        "children": [
+          "billion"
+        ]
+      },
+      {
+        "label": "billion",
+        "validator": {
+          "text": [
+            "billion"
+          ],
+          "bad_subtree_tokens": [
+            "further"
+          ]
+        },
+        "parent": "preposition",
+        "children": [
+          "number"
+        ]
+      },
+      {
+        "label": "number",
+        "validator": {
+          "pos": [
+            "num"
+          ],
+          "bad_subtree_tokens": [
+            "billion"
+          ]
+        },
+        "parent": "billion",
+        "children": [],
+        "extract": true
+      }
+    ]
+  }
+}

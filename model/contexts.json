@@ -1,0 +1,1299 @@
+{
+  "Bank_Rate": {
+    "case_1": [
+      {
+        "label": "head",
+        "validator": {
+          "lemma": [
+            "agree",
+            "vote"
+          ],
+          "pos": [
+            "verb"
+          ],
+          "good_subtree_tokens": [
+            "bank",
+            "rate",
+            "%"
+          ]
+        },
+        "parent": "",
+        "children": [
+          "subject",
+          "action"
+        ]
+      },
+      {
+        "label": "subject",
+        "validator": {
+          "text": [
+            "mpc",
+            "committee"
+          ]
+        },
+        "parent": "head",
+        "children": []
+      },
+      {
+        "label": "action",
+        "validator": {
+          "lemma": [
+            "increase",
+            "maintain",
+            "raise",
+            "reduce"
+          ],
+          "pos": [
+            "verb"
+          ],
+          "good_subtree_tokens": [
+            "bank",
+            "rate",
+            "%"
+          ]
+        },
+        "parent": "head",
+        "children": [
+          "rate",
+          "preposition"
+        ]
+      },
+      {
+        "label": "rate",
+        "validator": {
+          "text": [
+            "rate"
+          ],
+          "bad_subtree_tokens": [
+            "repo"
+          ]
+        },
+        "parent": "action",
+        "children": []
+      },
+      {
+        "label": "preposition",
+        "validator": {
+          "text": [
+            "at",
+            "to"
+          ]
+        },
+        "parent": "action",
+        "children": [
+          "%"
+        ]
+      },
+      {
+        "label": "%",
+        "validator": {
+          "text": [
+            "%"
+          ]
+        },
+        "parent": "preposition",
+        "children": [
+          "number"
+        ]
+      },
+      {
+        "label": "number",
+        "validator": {
+          "pos": [
+            "num"
+          ]
+        },
+        "parent": "%",
+        "children": [],
+        "extract": true
+      }
+    ],
+    "case_3": [
+      {
+        "label": "head",
+        "validator": {
+          "lemma": [
+            "invite"
+          ],
+          "pos": [
+            "verb"
+          ],
+          "good_subtree_tokens": [
+            "bank",
+            "rate",
+            "%"
+          ]
+        },
+        "parent": "",
+        "children": [
+          "subject",
+          "vote"
+        ]
+      },
+      {
+        "label": "subject",
+        "validator": {
+          "text": [
+            "mpc",
+            "committee"
+          ]
+        },
+        "parent": "head",
+        "children": []
+      },
+      {
+        "label": "vote",
+        "validator": {
+          "lemma": [
+            "vote"
+          ],
+          "pos": [
+            "verb"
+          ]
+        },
+        "parent": "head",
+        "children": [
+          "action"
+        ]
+      },
+      {
+        "label": "action",
+        "validator": {
+          "lemma": [
+            "increase",
+            "maintain",
+            "raise",
+            "reduce"
+          ],
+          "pos": [
+            "verb"
+          ],
+          "good_subtree_tokens": [
+            "bank",
+            "rate",
+            "%"
+          ]
+        },
+        "parent": "vote",
+        "children": [
+          "rate",
+          "preposition"
+        ]
+      },
+      {
+        "label": "rate",
+        "validator": {
+          "text": [
+            "rate"
+          ],
+          "bad_subtree_tokens": [
+            "repo"
+          ]
+        },
+        "parent": "action",
+        "children": []
+      },
+      {
+        "label": "preposition",
+        "validator": {
+          "text": [
+            "at",
+            "to"
+          ]
+        },
+        "parent": "action",
+        "children": [
+          "%"
+        ]
+      },
+      {
+        "label": "%",
+        "validator": {
+          "text": [
+            "%"
+          ]
+        },
+        "parent": "preposition",
+        "children": [
+          "number"
+        ]
+      },
+      {
+        "label": "number",
+        "validator": {
+          "pos": [
+            "num"
+          ]
+        },
+        "parent": "%",
+        "children": [],
+        "extract": true
+      }
+    ],
+    "case_2": [
+      {
+        "label": "head",
+        "validator": {
+          "lemma": [
+            "invite"
+          ],
+          "pos": [
+            "verb"
+          ],
+          "good_subtree_tokens": [
+            "bank",
+            "rate",
+            "%"
+          ]
+        },
+        "parent": "",
+        "children": [
+          "subject",
+          "vote"
+        ]
+      },
+      {
+        "label": "subject",
+        "validator": {
+          "text": [
+            "mpc",
+            "committee"
+          ]
+        },
+        "parent": "head",
+        "children": []
+      },
+      {
+        "label": "vote",
+        "validator": {
+          "lemma": [
+            "vote"
+          ],
+          "pos": [
+            "verb"
+          ]
+        },
+        "parent": "head",
+        "children": [
+          "intention"
+        ]
+      },
+      {
+        "label": "intention",
+        "validator": {
+          "lemma": [
+            "intent"
+          ],
+          "pos": [
+            "verb"
+          ]
+        },
+        "parent": "vote",
+        "children": [
+          "subject_2",
+          "action"
+        ]
+      },
+      {
+        "label": "subject_2",
+        "validator": {
+          "text": [
+            "mpc",
+            "committee"
+          ]
+        },
+        "parent": "intention",
+        "children": []
+      },
+      {
+        "label": "action",
+        "validator": {
+          "lemma": [
+            "increase",
+            "maintain",
+            "raise",
+            "reduce"
+          ],
+          "pos": [
+            "verb"
+          ],
+          "good_subtree_tokens": [
+            "bank",
+            "rate",
+            "%"
+          ]
+        },
+        "parent": "intention",
+        "children": [
+          "rate",
+          "from"
+        ]
+      },
+      {
+        "label": "rate",
+        "validator": {
+          "text": [
+            "rate"
+          ],
+          "bad_subtree_tokens": [
+            "repo"
+          ]
+        },
+        "parent": "action",
+        "children": []
+      },
+      {
+        "label": "from",
+        "validator": {
+          "text": [
+            "from"
+          ]
+        },
+        "parent": "action",
+        "children": [
+          "preposition"
+        ]
+      },
+      {
+        "label": "preposition",
+        "validator": {
+          "text": [
+            "at",
+            "to",
+            "of"
+          ]
+        },
+        "parent": "from",
+        "children": [
+          "%"
+        ]
+      },
+      {
+        "label": "%",
+        "validator": {
+          "text": [
+            "%"
+          ]
+        },
+        "parent": "preposition",
+        "children": [
+          "number"
+        ]
+      },
+      {
+        "label": "number",
+        "validator": {
+          "pos": [
+            "num"
+          ]
+        },
+        "parent": "%",
+        "children": [],
+        "extract": true
+      }
+    ]
+  },
+  "QE": {
+        "case_3": [
+      {
+        "label": "head",
+        "validator": {
+          "lemma": [
+            "expansion"
+          ],
+          "good_subtree_tokens": [
+            "billion",
+            "stock"
+          ]
+        },
+        "parent": "",
+        "children": [
+          "scheme",
+          "action"
+        ]
+      },
+      {
+        "label": "scheme",
+        "validator": {
+          "lemma": [
+            "scheme"
+          ]
+        },
+        "parent": "head",
+        "children": []
+      },
+      {
+        "label": "action",
+        "validator": {
+          "lemma": [
+            "take"
+          ],
+          "pos": [
+            "verb"
+          ]
+        },
+        "parent": "head",
+        "children": [
+          "object",
+          "preposition"
+        ]
+      },
+      {
+        "label": "object",
+        "validator": {
+          "lemma": [
+            "stock"
+          ],
+          "bad_subtree_tokens": [
+            "non",
+            "-",
+            "financial"
+          ]
+        },
+        "parent": "action",
+        "children": []
+      },
+      {
+        "label": "preposition",
+        "validator": {
+          "text": [
+            "to"
+          ],
+          "pos": [
+            "adp"
+          ]
+        },
+        "parent": "action",
+        "children": [
+          "billion"
+        ]
+      },
+      {
+        "label": "billion",
+        "validator": {
+          "text": [
+            "billion"
+          ],
+          "bad_subtree_tokens": [
+            "further"
+          ]
+        },
+        "parent": "preposition",
+        "children": [
+          "number"
+        ]
+      },
+      {
+        "label": "number",
+        "validator": {
+          "pos": [
+            "num"
+          ],
+          "bad_subtree_tokens": [
+            "billion"
+          ]
+        },
+        "parent": "billion",
+        "children": [],
+        "extract": true
+      }
+    ],
+    "case_8": [
+      {
+        "label": "head",
+        "validator": {
+          "lemma": [
+            "continue"
+          ],
+          "pos": [
+            "verb"
+          ]
+        },
+        "parent": "",
+        "children": [
+          "subject",
+          "object",
+          "total"
+        ]
+      },
+      {
+        "label": "subject",
+        "validator": {
+          "text": [
+            "bank"
+          ],
+          "good_subtree_tokens": [
+            "england"
+          ]
+        },
+        "parent": "head",
+        "children": []
+      },
+      {
+        "label": "object",
+        "validator": {
+          "lemma": [
+            "programme"
+          ]
+        },
+        "parent": "head",
+        "children": []
+      },
+      {
+        "label": "total",
+        "validator": {
+          "lemma": [
+            "total"
+          ]
+        },
+        "parent": "head",
+        "children": [
+          "billion"
+        ]
+      },
+      {
+        "label": "billion",
+        "validator": {
+          "text": [
+            "billion"
+          ],
+          "bad_subtree_tokens": [
+            "further"
+          ]
+        },
+        "parent": "total",
+        "children": [
+          "number"
+        ]
+      },
+      {
+        "label": "number",
+        "validator": {
+          "pos": [
+            "num"
+          ],
+          "bad_subtree_tokens": [
+            "billion"
+          ]
+        },
+        "parent": "billion",
+        "children": [],
+        "extract": true
+      }
+    ],
+    "case_5": [
+      {
+        "label": "head",
+        "validator": {
+          "lemma": [
+            "maintain"
+          ],
+          "pos": [
+            "verb"
+          ]
+        },
+        "parent": "",
+        "children": [
+          "subject",
+          "object"
+        ]
+      },
+      {
+        "label": "subject",
+        "validator": {
+          "text": [
+            "bank"
+          ],
+          "good_subtree_tokens": [
+            "england"
+          ]
+        },
+        "parent": "head",
+        "children": []
+      },
+      {
+        "label": "object",
+        "validator": {
+          "lemma": [
+            "stock"
+          ],
+          "good_subtree_tokens": [
+            "central",
+            "bank",
+            "reserves"
+          ],
+          "bad_subtree_tokens": [
+            "non",
+            "-",
+            "financial"
+          ]
+        },
+        "parent": "head",
+        "children": [
+          "preposition"
+        ]
+      },
+      {
+        "label": "preposition",
+        "validator": {
+          "text": [
+            "at"
+          ],
+          "pos": [
+            "adp"
+          ]
+        },
+        "parent": "object",
+        "children": [
+          "billion"
+        ]
+      },
+      {
+        "label": "billion",
+        "validator": {
+          "text": [
+            "billion"
+          ],
+          "bad_subtree_tokens": [
+            "further"
+          ]
+        },
+        "parent": "preposition",
+        "children": [
+          "number"
+        ]
+      },
+      {
+        "label": "number",
+        "validator": {
+          "pos": [
+            "num"
+          ],
+          "bad_subtree_tokens": [
+            "billion"
+          ]
+        },
+        "parent": "billion",
+        "children": [],
+        "extract": true
+      }
+    ],
+    "case_1": [
+      {
+        "label": "head",
+        "validator": {
+          "lemma": [
+            "vote"
+          ],
+          "pos": [
+            "verb"
+          ],
+          "good_subtree_tokens": [
+            "billion",
+            "stock"
+          ]
+        },
+        "parent": "",
+        "children": [
+          "subject",
+          "action"
+        ]
+      },
+      {
+        "label": "subject",
+        "validator": {
+          "text": [
+            "committee",
+            "mpc"
+          ]
+        },
+        "parent": "head",
+        "children": []
+      },
+      {
+        "label": "action",
+        "validator": {
+          "lemma": [
+            "maintain"
+          ],
+          "pos": [
+            "verb"
+          ]
+        },
+        "parent": "head",
+        "children": [
+          "object",
+          "preposition"
+        ]
+      },
+      {
+        "label": "object",
+        "validator": {
+          "lemma": [
+            "stock"
+          ],
+          "good_subtree_tokens": [
+            "central",
+            "bank",
+            "reserves"
+          ],
+          "bad_subtree_tokens": [
+            "non",
+            "-",
+            "financial"
+          ]
+        },
+        "parent": "action",
+        "children": []
+      },
+      {
+        "label": "preposition",
+        "validator": {
+          "text": [
+            "at"
+          ],
+          "pos": [
+            "adp"
+          ]
+        },
+        "parent": "action",
+        "children": [
+          "billion"
+        ]
+      },
+      {
+        "label": "billion",
+        "validator": {
+          "text": [
+            "billion"
+          ],
+          "bad_subtree_tokens": [
+            "further"
+          ]
+        },
+        "parent": "preposition",
+        "children": [
+          "number"
+        ]
+      },
+      {
+        "label": "number",
+        "validator": {
+          "pos": [
+            "num"
+          ],
+          "bad_subtree_tokens": [
+            "billion"
+          ]
+        },
+        "parent": "billion",
+        "children": [],
+        "extract": true
+      }
+    ],
+    "case_2": [
+      {
+        "label": "head",
+        "validator": {
+          "lemma": [
+            "vote"
+          ],
+          "pos": [
+            "verb"
+          ],
+          "good_subtree_tokens": [
+            "billion",
+            "stock"
+          ]
+        },
+        "parent": "",
+        "children": [
+          "subject",
+          "action"
+        ]
+      },
+      {
+        "label": "subject",
+        "validator": {
+          "text": [
+            "committee",
+            "mpc"
+          ]
+        },
+        "parent": "head",
+        "children": []
+      },
+      {
+        "label": "action",
+        "validator": {
+          "lemma": [
+            "continue"
+          ],
+          "pos": [
+            "verb"
+          ]
+        },
+        "parent": "head",
+        "children": [
+          "programme",
+          "take"
+        ]
+      },
+      {
+        "label": "programme",
+        "validator": {
+          "text": [
+            "programme"
+          ]
+        },
+        "parent": "action",
+        "children": []
+      },
+      {
+        "label": "take",
+        "validator": {
+          "lemma": [
+            "take"
+          ],
+          "pos": [
+            "verb"
+          ]
+        },
+        "parent": "head",
+        "children": [
+          "preposition"
+        ]
+      },
+      {
+        "label": "object",
+        "validator": {
+          "lemma": [
+            "stock"
+          ],
+          "good_subtree_tokens": [
+            "central",
+            "bank",
+            "reserves"
+          ],
+          "bad_subtree_tokens": [
+            "non",
+            "-",
+            "financial"
+          ]
+        },
+        "parent": "take",
+        "children": []
+      },
+      {
+        "label": "preposition",
+        "validator": {
+          "text": [
+            "to"
+          ],
+          "pos": [
+            "adp"
+          ]
+        },
+        "parent": "take",
+        "children": [
+          "billion"
+        ]
+      },
+      {
+        "label": "billion",
+        "validator": {
+          "text": [
+            "billion"
+          ],
+          "bad_subtree_tokens": [
+            "further"
+          ]
+        },
+        "parent": "preposition",
+        "children": [
+          "number"
+        ]
+      },
+      {
+        "label": "number",
+        "validator": {
+          "pos": [
+            "num"
+          ],
+          "bad_subtree_tokens": [
+            "billion"
+          ]
+        },
+        "parent": "billion",
+        "children": [],
+        "extract": true
+      }
+    ],
+    "case_4": [
+      {
+        "label": "head",
+        "validator": {
+          "lemma": [
+            "invite"
+          ],
+          "pos": [
+            "verb"
+          ],
+          "good_subtree_tokens": [
+            "billion"
+          ]
+        },
+        "parent": "",
+        "children": [
+          "subject",
+          "vote"
+        ]
+      },
+      {
+        "label": "subject",
+        "validator": {
+          "text": [
+            "committee",
+            "mpc"
+          ]
+        },
+        "parent": "head",
+        "children": []
+      },
+      {
+        "label": "vote",
+        "validator": {
+          "lemma": [
+            "vote"
+          ],
+          "pos": [
+            "verb"
+          ]
+        },
+        "parent": "head",
+        "children": [
+          "proposition",
+          "agreement"
+        ]
+      },
+      {
+        "label": "proposition",
+        "validator": {
+          "lemma": [
+            "proposition"
+          ]
+        },
+        "parent": "vote",
+        "children": []
+      },
+      {
+        "label": "agreement",
+        "validator": {
+          "lemma": [
+            "agree"
+          ],
+          "pos": [
+            "verb"
+          ]
+        },
+        "parent": "vote",
+        "children": [
+          "preposition",
+          "action"
+        ]
+      },
+      {
+        "label": "action",
+        "validator": {
+          "lemma": [
+            "continue"
+          ],
+          "pos": [
+            "verb"
+          ]
+        },
+        "parent": "agreement",
+        "children": [
+          "total"
+        ]
+      },
+      {
+        "label": "preposition",
+        "validator": {
+          "text": [
+            "at"
+          ],
+          "good_subtree_tokens": [
+            "meeting"
+          ]
+        },
+        "parent": "agreement",
+        "children": []
+      },
+      {
+        "label": "total",
+        "validator": {
+          "lemma": [
+            "total"
+          ]
+        },
+        "parent": "action",
+        "children": []
+      },
+      {
+        "label": "billion",
+        "validator": {
+          "text": [
+            "billion"
+          ],
+          "bad_subtree_tokens": [
+            "further"
+          ]
+        },
+        "parent": "total",
+        "children": [
+          "number"
+        ]
+      },
+      {
+        "label": "number",
+        "validator": {
+          "pos": [
+            "num"
+          ],
+          "bad_subtree_tokens": [
+            "billion"
+          ]
+        },
+        "parent": "billion",
+        "children": [],
+        "extract": true
+      }
+    ],
+    "case_6": [
+      {
+        "label": "head",
+        "validator": {
+          "lemma": [
+            "invite"
+          ],
+          "pos": [
+            "verb"
+          ],
+          "good_subtree_tokens": [
+            "billion",
+            "stock"
+          ]
+        },
+        "parent": "",
+        "children": [
+          "main_subject",
+          "action"
+        ]
+      },
+      {
+        "label": "main_subject",
+        "validator": {
+          "text": [
+            "committee",
+            "mpc"
+          ]
+        },
+        "parent": "head",
+        "children": []
+      },
+      {
+        "label": "action",
+        "validator": {
+          "lemma": [
+            "maintain"
+          ],
+          "pos": [
+            "verb"
+          ]
+        },
+        "parent": "head",
+        "children": [
+          "subject",
+          "object"
+        ]
+      },
+      {
+        "label": "subject",
+        "validator": {
+          "text": [
+            "bank"
+          ],
+          "good_subtree_tokens": [
+            "england"
+          ]
+        },
+        "parent": "action",
+        "children": []
+      },
+      {
+        "label": "object",
+        "validator": {
+          "lemma": [
+            "stock"
+          ],
+          "good_subtree_tokens": [
+            "central",
+            "bank",
+            "reserves"
+          ],
+          "bad_subtree_tokens": [
+            "non",
+            "-",
+            "financial"
+          ]
+        },
+        "parent": "action",
+        "children": [
+          "preposition"
+        ]
+      },
+      {
+        "label": "preposition",
+        "validator": {
+          "text": [
+            "at"
+          ],
+          "pos": [
+            "adp"
+          ]
+        },
+        "parent": "object",
+        "children": [
+          "billion"
+        ]
+      },
+      {
+        "label": "billion",
+        "validator": {
+          "text": [
+            "billion"
+          ],
+          "bad_subtree_tokens": [
+            "further"
+          ]
+        },
+        "parent": "preposition",
+        "children": [
+          "number"
+        ]
+      },
+      {
+        "label": "number",
+        "validator": {
+          "pos": [
+            "num"
+          ],
+          "bad_subtree_tokens": [
+            "billion"
+          ]
+        },
+        "parent": "billion",
+        "children": [],
+        "extract": true
+      }
+    ],
+    "case_7": [
+      {
+        "label": "head",
+        "validator": {
+          "lemma": [
+            "finance"
+          ],
+          "pos": [
+            "verb"
+          ],
+          "good_subtree_tokens": [
+            "central",
+            "bank",
+            "reserves"
+          ],
+          "bad_subtree_tokens": [
+            "non",
+            "-",
+            "financial"
+          ]
+        },
+        "parent": "",
+        "children": [
+          "subject",
+          "object"
+        ]
+      },
+      {
+        "label": "subject",
+        "validator": {
+          "text": [
+            "bank"
+          ],
+          "good_subtree_tokens": [
+            "england"
+          ]
+        },
+        "parent": "head",
+        "children": []
+      },
+      {
+        "label": "object",
+        "validator": {
+          "lemma": [
+            "quantity"
+          ]
+        },
+        "parent": "head",
+        "children": [
+          "preposition"
+        ]
+      },
+      {
+        "label": "preposition",
+        "validator": {
+          "text": [
+            "of"
+          ],
+          "pos": [
+            "adp"
+          ]
+        },
+        "parent": "object",
+        "children": [
+          "billion"
+        ]
+      },
+      {
+        "label": "billion",
+        "validator": {
+          "text": [
+            "billion"
+          ],
+          "bad_subtree_tokens": [
+            "further"
+          ]
+        },
+        "parent": "preposition",
+        "children": [
+          "number"
+        ]
+      },
+      {
+        "label": "number",
+        "validator": {
+          "pos": [
+            "num"
+          ],
+          "bad_subtree_tokens": [
+            "billion"
+          ]
+        },
+        "parent": "billion",
+        "children": [],
+        "extract": true
+      }
+    ]
+  }
+}

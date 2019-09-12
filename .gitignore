@@ -1,0 +1,17 @@
+.idea/
+.ipynb_checkpoints/
+__pycache__/
+*/.idea/
+*/.ipynb_checkpoints/
+*/__pycache__/
+*/*/.idea/
+*/*/.ipynb_checkpoints/
+*/*/__pycache__/
+*.tar.gz
+*/.xlsx
+*.pytest_cache/
+*/*/.pytest_cache/
+*/*/*/.pytest_cache/
+*/*/xlsx
+
+logs.txt
