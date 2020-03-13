@@ -1,6 +1,6 @@
 # Bank news analysis using Natural Language Processing
 
-**Author**: Levan Tsinadze
+**Author**: Anzor Gozalishvili
 
 
 ## Task
