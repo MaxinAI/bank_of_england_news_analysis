@@ -39,6 +39,6 @@ toolz==0.9.0
 tqdm==4.25.0
 ujson==5.4.0
 urllib3==1.23
-waitress==1.1.0
+waitress==2.1.1
 Werkzeug==0.14.1
 wrapt==1.10.11
