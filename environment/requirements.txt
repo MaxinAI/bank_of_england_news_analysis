@@ -40,5 +40,5 @@ tqdm==4.25.0
 ujson==5.4.0
 urllib3==1.26.5
 waitress==2.1.2
-Werkzeug==0.15.5
+Werkzeug==2.2.3
 wrapt==1.10.11
