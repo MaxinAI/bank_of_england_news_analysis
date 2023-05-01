@@ -9,7 +9,7 @@ Cython==0.28.5
 cytoolz==0.9.0.1
 dill==0.2.8.2
 en-core-web-sm==2.0.0
-Flask==1.0.2
+Flask==2.3.2
 idna==2.7
 itsdangerous==0.24
 Jinja2==2.11.3
